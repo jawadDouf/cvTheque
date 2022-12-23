@@ -57,7 +57,7 @@ public class CommentController {
         }
     }
     //Update Comment
-    @PutMapping("{id}")
+    @PutMapping("{id} ")
     public ResponseEntity<Comment> updateComment(@RequestBody Comment updatedComment,@PathVariable int id){
         //get the object of the given id
         try {
